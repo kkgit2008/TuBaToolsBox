@@ -4,13 +4,19 @@
 
 #include <windows.h>
 #include <shlwapi.h>
+#include <winternl.h>
 
 #pragma comment(lib, "shlwapi.lib")
 
 static BOOL IsSupportedOS(void)
 {
-    OSVERSIONINFOW vi = { sizeof(vi) };
-    if (!GetVersionExW(&vi)) return FALSE;
+    HMODULE ntdll = GetModuleHandleW(L"ntdll.dll");
+    typedef LONG(WINAPI * RtlGetVersionFn)(PRTL_OSVERSIONINFOW);
+    RtlGetVersionFn rtlGetVersion = ntdll ? (RtlGetVersionFn)GetProcAddress(ntdll, "RtlGetVersion") : NULL;
+    if (!rtlGetVersion) return TRUE;
+
+    RTL_OSVERSIONINFOW vi = { sizeof(vi) };
+    if (rtlGetVersion(&vi) != 0) return TRUE;
     return vi.dwMajorVersion >= 10;
 }
 

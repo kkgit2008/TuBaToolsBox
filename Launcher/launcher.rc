@@ -1,4 +1,5 @@
-﻿#include <windows.h>
+﻿#pragma code_page(65001)
+#include <windows.h>
 
 IDI_APP ICON "..\\TubaWinUi3.WinUI3\\Assets\\AppIcon.ico"
 
@@ -16,11 +17,11 @@ BEGIN
         BLOCK "080404B0"
         BEGIN
             VALUE "CompanyName", "TubaWinUi3"
-            VALUE "FileDescription", "\u56FE\u5427\u5DE5\u5177\u7BB1CE"
+            VALUE "FileDescription", "图吧工具箱CE"
             VALUE "FileVersion", "1.0.0.0"
             VALUE "InternalName", "TubaWinUi3"
-            VALUE "OriginalFilename", "\u56FE\u5427\u5DE5\u5177\u7BB1WinUI3.exe"
-            VALUE "ProductName", "\u56FE\u5427\u5DE5\u5177\u7BB1CE"
+            VALUE "OriginalFilename", "图吧工具箱WinUI3.exe"
+            VALUE "ProductName", "图吧工具箱CE"
             VALUE "ProductVersion", "1.0.0.0"
         END
     END

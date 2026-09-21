@@ -61,6 +61,7 @@ Follow us on AtomGit: **[atomgit.com/luolangaga/tubatool](https://atomgit.com/lu
 - [Build from Source](#build-from-source)
 - [Community](#community)
 - [Contributors](#contributors)
+- [Code signing policy](#code-signing-policy)
 - [License](#license)
 
 ---
@@ -233,6 +234,8 @@ Two formats available:
 - **Portable (ZIP)** — Extract and run, no installation needed
 - **Installer (Inno Setup)** — Traditional setup program
 
+Signing policy for release artifacts: see [Code signing policy](#code-signing-policy).
+
 ### GitCode Releases (China Mirror)
 
 Users in China can download from the [GitCode mirror](https://gitcode.com/luolangaga/tubatool) for faster speeds.
@@ -315,6 +318,18 @@ Thanks to all the developers who have contributed to this project!
 <a href="https://github.com/luolangaga/tubatool/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=luolangaga/tubatool&max=30&columns=10" alt="Contributors" />
 </a>
+
+---
+
+## Code signing policy
+
+> Free code signing provided by [SignPath.io](https://about.signpath.io), certificate by [SignPath Foundation](https://signpath.org).
+
+Signing is performed inside the automated build pipeline, so a signature means the binary is an automated build of the source code in this repository — the build must pass trusted build system (GitHub Actions) origin verification and be manually approved by an Approver before it is signed.
+
+- **Committers / Reviewers**: [@luolangaga](https://github.com/luolangaga)
+- **Approvers**: [@luolangaga](https://github.com/luolangaga)
+- **Privacy policy**: [PrivacyPolicy.txt](PrivacyPolicy.txt)
 
 ---
 

@@ -17,42 +17,8 @@ $Target = switch ($Arch) {
     default { Write-Host "Unknown arch: $Arch"; exit 1 }
 }
 
-$rcContent = @"
-#include <windows.h>
-
-IDI_APP ICON "..\\TubaWinUi3.WinUI3\\Assets\\AppIcon.ico"
-
-VS_VERSION_INFO VERSIONINFO
-FILEVERSION 1,0,0,0
-PRODUCTVERSION 1,0,0,0
-FILEFLAGSMASK 0x3fL
-FILEFLAGS 0
-FILEOS VOS_NT_WINDOWS32
-FILETYPE VFT_APP
-FILESUBTYPE VFT2_UNKNOWN
-BEGIN
-    BLOCK "StringFileInfo"
-    BEGIN
-        BLOCK "080404B0"
-        BEGIN
-            VALUE "CompanyName", "TubaWinUi3"
-            VALUE "FileDescription", "\u56FE\u5427\u5DE5\u5177\u7BB1CE"
-            VALUE "FileVersion", "1.0.0.0"
-            VALUE "InternalName", "TubaWinUi3"
-            VALUE "OriginalFilename", "\u56FE\u5427\u5DE5\u5177\u7BB1WinUI3.exe"
-            VALUE "ProductName", "\u56FE\u5427\u5DE5\u5177\u7BB1CE"
-            VALUE "ProductVersion", "1.0.0.0"
-        END
-    END
-    BLOCK "VarFileInfo"
-    BEGIN
-        VALUE "Translation", 0x0804, 1200
-    END
-END
-"@
-
 $rcFile = Join-Path $LauncherDir 'launcher.rc'
-[System.IO.File]::WriteAllText($rcFile, $rcContent, [System.Text.UTF8Encoding]::new($true))
+if (-not (Test-Path -LiteralPath $rcFile)) { Write-Host 'ERROR: launcher.rc not found' -ForegroundColor Red; exit 1 }
 
 $Vcvarsall = Get-ChildItem -LiteralPath 'C:\Program Files\Microsoft Visual Studio' -Recurse -Filter 'vcvarsall.bat' -ErrorAction SilentlyContinue |
     Sort-Object FullName -Descending | Select-Object -First 1
@@ -100,7 +66,7 @@ Write-Host "Compiling launcher for $Arch ($Target)..." -ForegroundColor Cyan
 if ($LASTEXITCODE -ne 0) { Write-Host 'ERROR: Build failed' -ForegroundColor Red; exit 1 }
 
 Remove-Item -LiteralPath (Join-Path $LauncherDir 'launcher.res') -Force -ErrorAction SilentlyContinue
-Remove-Item -LiteralPath (Join-Path $binDir "*.pdb") -Force -ErrorAction SilentlyContinue
+Get-ChildItem -LiteralPath $binDir -Filter '*.pdb' -File -ErrorAction SilentlyContinue | Remove-Item -Force -ErrorAction SilentlyContinue
 
 $size = [math]::Round((Get-Item -LiteralPath $outExe).Length / 1KB, 1)
 Write-Host "OK: $outExe ($size KB)" -ForegroundColor Green

@@ -60,6 +60,7 @@
 - [从源码构建](#从源码构建)
 - [交流群聊](#交流群聊)
 - [贡献者](#贡献者)
+- [Code signing policy](#code-signing-policy)
 - [许可证](#许可证)
 - [捐赠支持](#捐赠支持)
 
@@ -234,6 +235,8 @@ CPU / GPU 烤机跑分，导出 PDF 报告，社区云端排行榜对比
 - **便携版 (ZIP)** -- 解压即用，无需安装
 - **安装版 (Inno Setup)** -- 传统安装程序
 
+发布产物的签名策略见 [Code signing policy](#code-signing-policy)。
+
 ### GitCode Releases（国内镜像）
 
 国内用户可从 [GitCode 镜像](https://gitcode.com/luolangaga/tubatool) 下载，速度更快。
@@ -316,6 +319,18 @@ dotnet run          # 运行（Unpackaged 模式）
 <a href="https://github.com/luolangaga/tubatool/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=luolangaga/tubatool&max=30&columns=10" alt="Contributors" />
 </a>
+
+---
+
+## Code signing policy
+
+> Free code signing provided by [SignPath.io](https://about.signpath.io), certificate by [SignPath Foundation](https://signpath.org).
+
+由 [SignPath.io](https://about.signpath.io) 提供免费代码签名，证书由 [SignPath Foundation](https://signpath.org) 颁发。签名在自动化构建流程中完成，因此签名代表该二进制是由本仓库源码自动构建产生的 —— 构建须通过可信构建系统（GitHub Actions）校验来源，并经 Approver 人工批准后才会签名。
+
+- **Committers / Reviewers**: [@luolangaga](https://github.com/luolangaga)
+- **Approvers**: [@luolangaga](https://github.com/luolangaga)
+- **隐私政策 / Privacy policy**: [PrivacyPolicy.txt](PrivacyPolicy.txt)
 
 ---
 
