@@ -19,6 +19,7 @@
 [![GitCode Stars](https://gitcode.com/luolangaga/tubatool/star/badge.svg)](https://gitcode.com/luolangaga/tubatool)
 [![Today Views](https://visitor-badge.laobi.icu/badge?page_id=luolangaga.tubatool&left_text=today+views&right_color=%230078D4)](https://github.com/luolangaga/tubatool)
 
+<a href="https://hellogithub.com/repository/luolangaga/tubatools" target="_blank"><img src="https://api.hellogithub.com/v1/widgets/recommend.svg?rid=f86864b693ec4f5ca75749cc152de2e8&claim_uid=9j2VeIwBLtJZzfr" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 <a href="https://atomgit.com/luolangaga/tubatool"><img alt="AtomGit G-Star" src="https://atomgit.com/luolangaga/tubatool/star/new_badge.svg" height="55"/></a>
 <a href="https://trendshift.io/repositories/51042?utm_source=trendshift-badge&utm_medium=badge&utm_campaign=badge-trendshift-51042" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/51042/daily?language=C%23" alt="luolangaga%2Ftubatools | Trendshift" width="250" height="55"/></a>
 <a href="https://trendshift.io/repositories/51042?utm_source=trendshift-badge&utm_medium=badge&utm_campaign=badge-trendshift-51042" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/51042/weekly?language=C%23" alt="luolangaga%2Ftubatools | Trendshift" width="250" height="55"/></a>
