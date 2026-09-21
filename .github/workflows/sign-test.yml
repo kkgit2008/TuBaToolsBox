@@ -34,9 +34,10 @@ jobs:
           "CompanyName    = $($v.CompanyName)"
 
       # 先上传为 GitHub Actions artifact，来源验证依赖它
+      # archive: false 需要 upload-artifact v7+（v4/v5 无此参数，传入会被忽略并打成 zip）
       - name: Upload unsigned launcher
         id: upload-unsigned-artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: launcher-unsigned-${{ inputs.arch }}
           path: Launcher/bin/图吧工具箱WinUI3_${{ inputs.arch }}.exe
