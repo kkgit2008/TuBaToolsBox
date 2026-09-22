@@ -207,7 +207,8 @@ public partial class App : Application
             return;
         }
 
-        if (!RuntimeHelper.IsMsixPackaged && !IsRunningAsAdmin())
+        if (!RuntimeHelper.IsMsixPackaged && !IsRunningAsAdmin()
+            && Environment.GetEnvironmentVariable("TUBA_SCREENSHOT_NOELEVATE") != "1")
         {
             ElevateAndRestart();
             Exit();

@@ -26,7 +26,7 @@ English | [中文](README.md)
 
 [Official Docs](https://tubawinui3.cn) | [Download](https://github.com/luolangaga/tubatool/releases) | [Issues](https://github.com/luolangaga/tubatool/issues) | [Discussions](https://github.com/luolangaga/tubatool/discussions)
 
-<img src=".github/screenshot.png" alt="TubaWinUi3 Screenshot" width="100%"/>
+<img src="images/screenshots/home.png" alt="TubaWinUi3 Screenshot" width="100%"/>
 
 </div>
 
