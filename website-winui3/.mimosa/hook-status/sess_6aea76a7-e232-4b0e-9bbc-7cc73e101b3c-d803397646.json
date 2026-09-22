@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "mimosa-hook-status/v1",
+  "recordedAt": "2026-09-09T15:19:08.767Z",
+  "sessionId": "sess_6aea76a7-e232-4b0e-9bbc-7cc73e101b3c",
+  "event": "PostToolUse",
+  "toolName": "Edit",
+  "file": "src/site/pages/RankingPage.vue",
+  "outcome": "clear",
+  "coverage": "complete",
+  "findingCount": 0,
+  "durationMs": 4,
+  "hostState": "hook_complete",
+  "reportHint": ".mimosa/reports/"
+}
