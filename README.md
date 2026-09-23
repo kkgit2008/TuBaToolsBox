@@ -12,7 +12,7 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=0078D4&center=true&vCenter=true&width=600&lines=PC+%E7%A1%AC%E4%BB%B6%E5%B7%A5%E5%85%B7%E9%9B%86%E5%90%88;WinUI+3+%C2%B7+.NET+10;89+%E6%AC%BE%E6%94%B6%E5%BD%95%E5%B7%A5%E5%85%B7+%2B+47+%E6%AC%BE%E5%86%85%E7%BD%AE%E5%B7%A5%E5%85%B7;%E4%B8%80%E9%94%AE%E5%90%AF%E5%8A%A8" alt="Typing SVG" />
 </a>
 
-[![GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue?style=flat-square)](LICENSE)
+[![License: Code GPL-3.0](https://img.shields.io/badge/License-Code%20GPL--3.0-blue?style=flat-square)](LICENSE)
 [![.NET 10](https://img.shields.io/badge/.NET-10-512bd4?style=flat-square&logo=dotnet)](https://dotnet.microsoft.com/)
 [![WinUI 3](https://img.shields.io/badge/WinUI-3-0078d4?style=flat-square&logo=windows)](https://learn.microsoft.com/windows/apps/winui/)
 [![Stars](https://img.shields.io/github/stars/luolangaga/tubatool?style=flat-square&logo=github)](https://github.com/luolangaga/tubatool)
@@ -60,6 +60,7 @@
 - [实用工具](#实用工具)
 - [内置工具（47 款）](#内置工具47-款)
 - [收录工具（89 款）](#收录工具89-款)
+- [第三方工具与授权说明](#第三方工具与授权说明)
 - [安装方式](#安装方式)
 - [系统兼容性](#系统兼容性)
 - [从源码构建](#从源码构建)
@@ -471,6 +472,21 @@ CPU / GPU / 内存 / 硬盘 / 浏览器五大项全测，按比例折算「游�
 
 ---
 
+## 第三方工具与授权说明
+
+> [!IMPORTANT]
+> `TubaWinUi3.WinUI3/Tools/`、下载功能拉取的外部工具、第三方图标/商标/数据等内容不属于本项目原创代码，**不自动适用 GPL-3.0**。
+> 这些内容仅可在其各自许可证、版权声明或权利人授权范围内使用与分发。
+
+- 本项目原创源代码、脚本、配置、文档与原创资源：按 [LICENSE](LICENSE)（GPL-3.0）授权。
+- 第三方工具及其附带文件（例如 `TubaWinUi3.WinUI3/Tools/**` 下各工具目录中的 `LICENSE*`、`COPYING*`、`EULA*` 等）：按各自条款执行，本项目不对其进行再许可。
+- 第三方商标、品牌名称、图标与数据归其各自权利人所有，仅作识别或兼容用途，不代表授权、背书或从属关系。
+- 对许可证未知、权利状态不明确或不适合分发的第三方内容，请维护者/分发者在发布前自行核验权利来源；本仓库不作“已获完整授权”的断言。
+
+集中说明见：[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)。
+
+---
+
 ## 安装方式
 
 ### GitHub Releases（推荐）
@@ -582,11 +598,13 @@ dotnet run          # 运行（Unpackaged 模式）
 
 ## 许可证
 
-本项目采用 **GPL-3.0** 开源协议。
+本仓库采用**分层许可说明**：
 
-- 源代码可自由使用、修改和分发
-- 衍生作品必须以相同协议开源
-- 详见 [LICENSE](LICENSE)；附带的 [License.txt](License.txt) 为软件使用须知与网络/隐私声明，不构成对 GPL-3.0 的附加限制
+- **项目原创部分**（源代码、脚本、配置、文档、原创资源）采用 **GPL-3.0**，详见 [LICENSE](LICENSE)。
+- **第三方内容**（随包收录工具、下载获取的外部工具、第三方二进制、商标、图标、数据与其他非原创内容）**不自动纳入 GPL-3.0**，请遵守其各自许可证或权利人授权，详见 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)。
+- 附带的 [License.txt](License.txt) 为软件使用须知与网络/隐私声明，不构成对 GPL-3.0 的附加限制。
+
+> 提示：以上内容仅为项目文档说明，不构成法律意见。如需商业分发，或对具体第三方工具的权利状态有疑问，请咨询相应权利人或专业法律顾问。
 
 ---
 

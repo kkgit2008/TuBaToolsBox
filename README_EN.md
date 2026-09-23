@@ -14,7 +14,7 @@ English | [中文](README.md)
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=0078D4&center=true&vCenter=true&width=600&lines=PC+Hardware+Toolbox;WinUI+3+%C2%B7+.NET+10;82+Tools+%C2%B7+One-Click+Launch" alt="Typing SVG" />
 </a>
 
-[![GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue?style=flat-square)](LICENSE)
+[![License: Code GPL-3.0](https://img.shields.io/badge/License-Code%20GPL--3.0-blue?style=flat-square)](LICENSE)
 [![.NET 10](https://img.shields.io/badge/.NET-10-512bd4?style=flat-square&logo=dotnet)](https://dotnet.microsoft.com/)
 [![WinUI 3](https://img.shields.io/badge/WinUI-3-0078d4?style=flat-square&logo=windows)](https://learn.microsoft.com/windows/apps/winui/)
 [![Stars](https://img.shields.io/github/stars/luolangaga/tubatool?style=flat-square&logo=github)](https://github.com/luolangaga/tubatool)
@@ -56,6 +56,7 @@ Follow us on AtomGit: **[atomgit.com/luolangaga/tubatool](https://atomgit.com/lu
 - [Feature Highlights](#feature-highlights)
 - [Built-in Tools](#built-in-tools)
 - [Bundled Tools](#bundled-tools)
+- [Third-party Tools & Licensing Scope](#third-party-tools--licensing-scope)
 - [Installation](#installation)
 - [System Compatibility](#system-compatibility)
 - [Build from Source](#build-from-source)
@@ -224,6 +225,21 @@ See [Official Docs](https://tubawinui3.cn) for the complete tool list.
 
 ---
 
+## Third-party Tools & Licensing Scope
+
+> [!IMPORTANT]
+> Content in `TubaWinUi3.WinUI3/Tools/`, externally downloaded tools, and third-party trademarks/icons/data are not original works of this project and are **not automatically covered by GPL-3.0**.
+> They may only be used and redistributed under their own licenses, copyright notices, or rightsholder authorizations.
+
+- Original project materials (source code, scripts, configs, docs, and original assets) are licensed under [LICENSE](LICENSE) (GPL-3.0).
+- Third-party tools and bundled files (for example `LICENSE*`, `COPYING*`, `EULA*` under `TubaWinUi3.WinUI3/Tools/**`) remain under their own terms; this project does not relicense them.
+- Third-party trademarks, brand names, icons, and data belong to their respective owners and are used for identification/compatibility purposes only.
+- For items with unknown or unclear rights status, maintainers and redistributors should verify rights provenance before release; this repository does not claim blanket authorization.
+
+Central notice: [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+
+---
+
 ## Installation
 
 ### GitHub Releases (Recommended)
@@ -335,11 +351,13 @@ Signing is performed inside the automated build pipeline, so a signature means t
 
 ## License
 
-This project is licensed under **GPL-3.0**.
+This repository uses a **layered licensing statement**:
 
-- Source code may be freely used, modified, and distributed
-- Derivative works must be open-sourced under the same license
-- See [LICENSE](LICENSE) for details; the accompanying [License.txt](License.txt) is a software usage notice (network/privacy disclosure) and does not add further restrictions on top of GPL-3.0
+- **Original project materials** (source code, scripts, configs, docs, and original assets) are licensed under **GPL-3.0**, see [LICENSE](LICENSE).
+- **Third-party content** (bundled tools, externally downloaded tools, third-party binaries, trademarks, icons, data, and other non-original content) is **not automatically covered by GPL-3.0**. Use and redistribution must follow each item’s own terms, see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+- [License.txt](License.txt) is a software usage / network / privacy notice and does not add extra restrictions on top of GPL-3.0.
+
+> Note: This documentation is informational only and is not legal advice. For commercial redistribution or any rights uncertainty about specific third-party tools, consult the relevant rightsholders or professional legal counsel.
 
 ---
 
